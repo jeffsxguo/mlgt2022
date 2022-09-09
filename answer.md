@@ -329,48 +329,69 @@ e)可以得出结论。把b)变为$\forall x(S(x)\to \neg R(x))$，反复利用$
 
 #### 1.6.11 G
 
->Showthattheargumentformwithpremisesp 1 ,p 2 ,…,p n and conclusion q → r is valid if the argument form with premises p 1 ,p 2 ,…,p n ,q, and conclusion r is valid.
+>Show that the argument form with premises $p_1 ,p_2 ,\cdots,p_ n$ and conclusion $q → r$ is valid if the argument form with premises $p _1 ,p_ 2 ,…,p _n$ ,$q$, and conclusion $r$ is valid.
 
+当 $q$ 为真时，由给定论证形式的有效性（$p_1\and p_2\cdots \and p_n\and q\to r$）知当 $p_1,p_2,\cdots,p_n$ 为真时，$r$ 为真，故 $q\to r$ 为真。
 
+当 $q$ 为假时，$q\to r$ 为真自然成立。
+
+综上可知结论成立。
 
 #### 1.6.23 G
 
-> Identify the error or errors in this argument that sup-posedly shows that if ∃xP(x) ∧ ∃xQ(x) is true then ∃x(P(x) ∧ Q(x)) is true.
-> 
-> 1.∃xP(x) ∨ ∃xQ(x) Premise
->2.∃xP(x) Simplification from (1)
-> 3.P(c) Existential instantiation from (2)
-> 4.∃xQ(x) Simplification from (1)
-> 5.Q(c) Existential instantiation from (4)
-> 6.P(c) ∧ Q(c) Conjunction from (3) and (5)
-> 7.∃x(P(x) ∧ Q(x)) Existential generalization
+> Identify the error or errors in this argument that supposedly shows that if $∃xP(x) ∧ ∃xQ(x)$ is true then $∃x(P(x) ∧ Q(x))$ is true.
+>
+> 1.$∃xP(x) ∨ ∃xQ(x)$ Premise
+> 2.$∃xP(x)$ Simplification from (1)
+> 3.$P(c)$ Existential instantiation from (2)
+> 4.$∃xQ(x)$ Simplification from (1)
+> 5.$Q(c)$ Existential instantiation from (4)
+> 6.$P(c) ∧ Q(c)$ Conjunction from (3) and (5)
+> 7.$∃x(P(x) ∧ Q(x))$ Existential generalization
 
-
+- 第 1 步前提引入错误。应为 $∃xP(x) ∧ ∃xQ(x)$。
+- 第 5 步存在实例错误。$c$ 已经被使用过，在此处的 $c$ 没有理由是第 3 步所使用的 $c$ 。
 
 #### 1.6.29 G
 
->Use rules of inference to show that if ∀x(P(x) ∨ Q(x)),∀x(¬Q(x) ∨ S(x)), ∀x(R(x) → ¬S(x)), and ∃x¬P(x) are true, then ∃x¬R(x) is true.
+>Use rules of inference to show that if $∀x(P(x) ∨ Q(x))$,$∀x(¬Q(x) ∨ S(x))$, $∀x(R(x) → ¬S(x))$, and $∃x¬P(x)$ are true, then $∃x¬R(x)$ is true.
+
+$$
+\begin{align}
+&1.\exist x\neg P(x)&前提引入\\
+&2.\neg P(c)&存在实例，由(1)\\
+&3.\forall x(P(x)\or Q(x))&前提引入\\
+&4.P(c)\or Q(c)&全称实例，由(3)\\
+&5.Q(c)&析取三段论，由(2)和(4)\\
+&6.\forall x(\neg Q(x)\or S(x))&前提引入\\
+&7.\neg Q(c)\or S(c)&全称实例，由(6)\\
+&8.\neg(\neg Q(c))&双重否定律，由(5)\\
+&9.S(c)&析取三段论，由(7)和(8)\\
+&10.\forall x(R(x)\to\neg S(x))&前提引入\\
+&11.R(c)\to\neg S(c)&存在实例，由(10)\\
+&12.\neg(\neg S(c))&双重否定律，由(9)\\
+&13.\neg R(c)&取拒式，由(11)和(12)\\
+&14.\exist x\neg R(x)&存在引入，由(13)
+\end{align}
+$$
 
 
 
 #### 1.6.35 G
 
->Determine whether this argument, taken from Kalish and Montague [KaMo64], is valid.
->If Superman were able and willing to prevent evil, he would do so. If Superman were unable to prevent evil,he would be impotent; if he were unwilling to prevent evil, he would be malevolent. Superman does not prevent evil. If Superman exists, he is neither impotent nor malevolent. Therefore, Superman does not exist.
-
-#### 
+>Determine whether this argument, taken from Kalish and Montague [KaMo64], is valid. If Superman were able and willing to prevent evil, he would do so. If Superman were unable to prevent evil,he would be impotent; if he were unwilling to prevent evil, he would be malevolent. Superman does not prevent evil. If Superman exists, he is neither impotent nor malevolent. Therefore, Superman does not exist.
 
 ### Introduction to Proofs
 
 #### 1.7.15 G
 
-> Prove that if x is an irrational number and x > 0, then √ x is also irrational.
+> Prove that if $x$ is an irrational number and $x > 0$, then $\sqrt x$ is also irrational.
 
 
 
 #### 1.7.19 G
 
-> Show that if n is an integer and n 3 + 5 is odd, then n is even using
+> Show that if $n$ is an integer and $n^3 + 5$ is odd, then $n$ is even using
 > a) a proof by contraposition.
 > b) a proof by contradiction.
 
@@ -378,7 +399,7 @@ e)可以得出结论。把b)变为$\forall x(S(x)\to \neg R(x))$，反复利用$
 
 #### 1.7.41 G
 
-> Prove that at least one of the real numbers a 1 , a 2 ,…,a n is greater than or equal to the average of these numbers. What kind of proof did you use?
+> Prove that at least one of the real numbers $a_ 1 , a _2 ,\cdots,a_ n$ is greater than or equal to the average of these numbers. What kind of proof did you use?
 
 
 
