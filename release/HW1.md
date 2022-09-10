@@ -1,6 +1,8 @@
-## The Foundations: Logic and Proofs
+> Mathematical Logic and Graph Theory 2022 Homework 1 Answers
+>
+> By [Jingyi Chen](chenjingyi071@mail.ustc.edu.cn) with C and [Songxiao Guo](logname@mail.ustc.edu.cn) with G after each question number.
 
-### Propositional Logic
+[TOC]
 
 #### 1.1.13 G
 
@@ -112,8 +114,6 @@
 - 至少有一个为真时，析取式前半的合取式为真；至少有一个为假时，析取式后半的合取式为真；故析取式为真。
 - 三个变量具有相同的真值时，析取式的前半与后半的合取式的真值相反，故析取式为假。
 
-### Applications of Propositional Logic
-
 #### 1.2.11 G
 
 >Are these system speciﬁcations consistent? “The router can send packets to the edge system only if it supports the new address space. For the router to support the new address space it is necessary that the latest software release be installed. The router can send packets to the edge system if the latest software release is installed. The router does not support the new address space.”
@@ -157,24 +157,20 @@ $$
 
 所以男管家、厨师在说假话，园丁、杂役不能确定。
 
-### Propositional Equivalences
-
 #### 1.3.19 C
 
 >Determine whether $(¬q ∧ (p → q)) → ¬p$ is a tautology.
 
 使用真值表当然可行。使用逻辑恒等式，例如：
-
-$(¬q ∧ (p → q)) → ¬p \equiv \neg(\neg q\and(p\to q))\or\neg p$
-
-$\equiv q\or(\neg(p\to q))\or\neg p$
-
-$\equiv (p\and\neg q)\or\neg p\or q$
-
-$\equiv(p\and\neg q)\or(\neg(p\and\neg q))$
-
-$\equiv T$
-
+$$
+\begin{align}
+(¬q ∧ (p → q)) → ¬p &\equiv \neg(\neg q\and(p\to q))\or\neg p\\
+&\equiv q\or(\neg(p\to q))\or\neg p\\
+&\equiv (p\and\neg q)\or\neg p\or q\\
+&\equiv(p\and\neg q)\or(\neg(p\and\neg q))\\
+&\equiv T
+\end{align}
+$$
 所以它是永真式。
 
 #### 1.3.29 C
@@ -182,32 +178,30 @@ $\equiv T$
 >Show that $(p → r) ∨ (q → r)$ and $(p ∧ q) → r$ are logically equivalent.
 
 使用真值表当然可行。使用逻辑恒等式，例如：
-
-$(p\to r)\or(q\to r)\equiv \neg p\or r\or\neg q\or r$
-
-$\equiv (\neg p\or\neg q)\or r$
-
-$\equiv \neg(p\and q)\or r$
-
-$\equiv (p\and q)\to r$
+$$
+\begin{align}
+(p\to r)\or(q\to r)&\equiv \neg p\or r\or\neg q\or r\\
+&\equiv (\neg p\or\neg q)\or r\\
+&\equiv \neg(p\and q)\or r\\
+&\equiv (p\and q)\to r
+\end{align}
+$$
 
 #### 1.3.33 C
 
 > Show that $(p → q) ∧ (q → r) → (p → r)$ is a tautology.
 
 使用真值表当然可行。使用逻辑恒等式，例如：
-
-$(p\to q)\and(q\to r)\to(p\to r)\equiv\neg(\neg(\neg p\or q)\or\neg(\neg q\or r))\to(\neg p\or r)$
-
-$\equiv(\neg(\neg p\or q))\or(\neg(\neg q\or r))\or(\neg p\or r)$
-
-$\equiv \neg p\or(p\and\neg q)\or r\or(q\and\neg r)$
-
-$\equiv((\neg p\or p)\and(\neg p\or\neg q))\or((r\or\neg r)\and(q\or\neg r))$
-
-$\equiv\neg p\or \neg q\or q\or\neg r$
-
-$\equiv T$ 
+$$
+\begin{align}
+(p\to q)\and(q\to r)\to(p\to r)&\equiv\neg(\neg(\neg p\or q)\or\neg(\neg q\or r))\to(\neg p\or r)\\
+&\equiv(\neg(\neg p\or q))\or(\neg(\neg q\or r))\or(\neg p\or r)\\
+&\equiv \neg p\or(p\and\neg q)\or r\or(q\and\neg r)\\
+&\equiv((\neg p\or p)\and(\neg p\or\neg q))\or((r\or\neg r)\and(q\or\neg r))\\
+&\equiv\neg p\or \neg q\or q\or\neg r\\
+&\equiv T
+\end{align}
+$$
 
 #### 1.3.45 C
 
@@ -215,20 +209,19 @@ $\equiv T$
 
 依据字面意思即可写出：
 
-$propositional(p\and q\and\neg r)\or(p\and\neg q\and r)\or(\neg p\and q\and r)$
+propositional$(p\and q\and\neg r)\or(p\and\neg q\and r)\or(\neg p\and q\and r)$
 
 #### 1.3.55 C
 
 >Find a compound proposition logically equivalent to $p → q$ using only the logical operator $↓$.
 
-$p\to q\equiv\neg p\or q$
-
-$\equiv\neg(p\and\neg q)$
-
-$\equiv\neg(\neg\neg p\and\neg q)$
-
-$\equiv\neg(\neg p\downarrow q)$
-
-$\equiv\neg((p\downarrow p)\downarrow q)$
-
-$\equiv((p\downarrow p)\downarrow q)\downarrow((p\downarrow p)\downarrow q)$
+$$
+\begin{align}
+p\to q&\equiv\neg p\or q\\
+&\equiv\neg(p\and\neg q)\\
+&\equiv\neg(\neg\neg p\and\neg q)\\
+&\equiv\neg(\neg p\downarrow q)\\
+&\equiv\neg((p\downarrow p)\downarrow q)\\
+&\equiv((p\downarrow p)\downarrow q)\downarrow((p\downarrow p)\downarrow q)\\
+\end{align}
+$$
