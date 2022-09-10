@@ -168,17 +168,15 @@ $$
 >Determine whether $(¬q ∧ (p → q)) → ¬p$ is a tautology.
 
 使用真值表当然可行。使用逻辑恒等式，例如：
-
-$(¬q ∧ (p → q)) → ¬p \equiv \neg(\neg q\and(p\to q))\or\neg p$
-
-$\equiv q\or(\neg(p\to q))\or\neg p$
-
-$\equiv (p\and\neg q)\or\neg p\or q$
-
-$\equiv(p\and\neg q)\or(\neg(p\and\neg q))$
-
-$\equiv T$
-
+$$
+\begin{align}
+(¬q ∧ (p → q)) → ¬p &\equiv \neg(\neg q\and(p\to q))\or\neg p\\
+&\equiv q\or(\neg(p\to q))\or\neg p\\
+&\equiv (p\and\neg q)\or\neg p\or q\\
+&\equiv(p\and\neg q)\or(\neg(p\and\neg q))\\
+&\equiv T
+\end{align}
+$$
 所以它是永真式。
 
 #### 1.3.29 C
@@ -186,40 +184,36 @@ $\equiv T$
 >Show that $(p → r) ∨ (q → r)$ and $(p ∧ q) → r$ are logically equivalent.
 
 使用真值表当然可行。使用逻辑恒等式，例如：
-
-$(p\to r)\or(q\to r)\equiv \neg p\or r\or\neg q\or r$
-
-$\equiv (\neg p\or\neg q)\or r$
-
-$\equiv \neg(p\and q)\or r$
-
-$\equiv (p\and q)\to r$
-
+$$
+\begin{align}
+(p\to r)\or(q\to r)&\equiv \neg p\or r\or\neg q\or r\\
+&\equiv (\neg p\or\neg q)\or r\\
+&\equiv \neg(p\and q)\or r\\
+&\equiv (p\and q)\to r
+\end{align}
+$$
 #### 1.3.33 C
 
 > Show that $(p → q) ∧ (q → r) → (p → r)$ is a tautology.
 
 使用真值表当然可行。使用逻辑恒等式，例如：
-
-$(p\to q)\and(q\to r)\to(p\to r)\equiv\neg(\neg(\neg p\or q)\or\neg(\neg q\or r))\to(\neg p\or r)$
-
-$\equiv(\neg(\neg p\or q))\or(\neg(\neg q\or r))\or(\neg p\or r)$
-
-$\equiv \neg p\or(p\and\neg q)\or r\or(q\and\neg r)$
-
-$\equiv((\neg p\or p)\and(\neg p\or\neg q))\or((r\or\neg r)\and(q\or\neg r))$
-
-$\equiv\neg p\or \neg q\or q\or\neg r$
-
-$\equiv T$ 
-
+$$
+\begin{align}
+(p\to q)\and(q\to r)\to(p\to r)&\equiv\neg(\neg(\neg p\or q)\or\neg(\neg q\or r))\to(\neg p\or r)\\
+&\equiv(\neg(\neg p\or q))\or(\neg(\neg q\or r))\or(\neg p\or r)\\
+&\equiv \neg p\or(p\and\neg q)\or r\or(q\and\neg r)\\
+&\equiv((\neg p\or p)\and(\neg p\or\neg q))\or((r\or\neg r)\and(q\or\neg r))\\
+&\equiv\neg p\or \neg q\or q\or\neg r\\
+&\equiv T
+\end{align}
+$$
 #### 1.3.45 C
 
 >Find a compound proposition involving the propositional variables $p$, $q$, and $r$ that is true when exactly two of $p$, $q$, and $r$ are true and is false otherwise. 
 
 依据字面意思即可写出：
 
-$propositional(p\and q\and\neg r)\or(p\and\neg q\and r)\or(\neg p\and q\and r)$
+propositional$(p\and q\and\neg r)\or(p\and\neg q\and r)\or(\neg p\and q\and r)$
 
 #### 1.3.55 C
 
