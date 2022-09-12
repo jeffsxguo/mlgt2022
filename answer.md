@@ -253,7 +253,7 @@ b)每个人都是很有趣的喜剧演员；
 
 c)存在某个人，如果他是喜剧演员，那么他是很有趣的；
 
-d)某些喜剧演员是很有趣的。
+d)某些喜剧演员是很有趣的（某些很有趣的人是喜剧演员）。
 
 #### 1.4.27 C
 
@@ -317,13 +317,13 @@ e)可以得出结论。把b)变为$\forall x(S(x)\to \neg R(x))$，反复利用$
 
 >Use predicates, quantiﬁers, logical connectives, and mathematical operators to express the statement that every positive integer is the sum of the squares of four integers.
 
-
+$\forall x\exist a\exist b\exist c\exist d((x>0)\to x=a^2+b^2+c^2+d^2)$，论域为全体整数。
 
 #### 1.5.35 C
 
 >Find a common domain for the variables $x$, $y$, $z$, and $w$ for which the statement $∀x∀y∀z∃w((w ≠ x) ∧ (w ≠ y) ∧ (w ≠ z))$ is true and another common domain for these variables for which it is false.
 
-
+任意具有4个或更多不同成员的论域会使命题为真，任意具有3个或更少成员的论域会使命题为假。
 
 ### Rules of Inference
 
