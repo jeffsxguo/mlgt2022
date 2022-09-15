@@ -14,7 +14,7 @@
 
 - a)每个喜剧演员都很有趣；
 - b)每个人都是很有趣的喜剧演员；
-- c)存在某个人，如果他是喜剧演员，那么他是很有趣的；
+- c)存在某个人，如果他 是喜剧演员，那么他是很有趣的；
 - d)某些喜剧演员是很有趣的（某些很有趣的人是喜剧演员）。
 
 #### 1.4.27 C
@@ -59,6 +59,7 @@
 >b) Nobody is despised who can manage a crocodile.
 >c) Illogical persons are despised.
 >d) Babies cannot manage crocodiles.
+>
 >e) Does (d) follow from (a), (b), and (c)? If not, is there a correct conclusion?
 
 - a)$\forall x(P(x)\to\neg Q(x))$
@@ -80,7 +81,7 @@
 - a)Abdallah Hussein 不喜欢日本菜。
 - b)学校的某些学生喜欢韩国菜，并且学校的每个人都喜欢墨西哥菜。
 - c)存在一些菜，不是 Monique Arsenault 喜欢，就是 Jay Johnson 喜欢。
-- d)学校中每一对不同的学生，总有一种菜，他们都不喜欢。
+- d)学校中每一对不同的学生，总有一种菜，他们不都喜欢。
 - e)\*
 - f)学校中任意两个学生（可能相同），总有一种菜，他们有相同的看法。
 
@@ -101,9 +102,9 @@
 - c)$\forall x(F(x)\to(A(x,Miller教授)\or A(Miller教授,x))).$
 - d)$\exist x(S(x)\and\forall y(F(y)\to\neg A(x,y))).$
 - e)$\exist x(F(x)\and\forall y(S(y)\to\neg A(y,x))).$
-- f)$\forall y(F(u)\to\exist x(S(x)\or A(x,y))).$
+- f)$\forall y(F(u)\to\exist x(S(x)\and A(x,y))).$
 - g)$\exist x(F(x)\and\forall y((F(y)\and(y\neq x))\to A(x,y))).$
-- h)$\exist (xS(x)\and\forall(F(y)\to\neg A(y,x))).$
+- h)$\exist x(S(x)\and\forall(F(y)\to\neg A(y,x))).$
 
 #### 1.5.21 C
 
@@ -113,7 +114,7 @@ $$
 \forall x\exist a\exist b\exist c\exist d((x>0)\to x=a^2+b^2+c^2+d^2),
 $$
 
-$，论域为全体整数。
+ 论域为全体整数。
 
 #### 1.5.35 C
 
