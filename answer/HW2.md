@@ -1,4 +1,4 @@
->Mathematical Logic and Graph Theory 2022 Homework 2 Answers
+>  Mathematical Logic and Graph Theory 2022 Homework 2 Answers
 >
 >By [Jingyi Chen](chenjingyi071@mail.ustc.edu.cn) with C and [Songxiao Guo](logname@mail.ustc.edu.cn) with G after each question number.
 
@@ -104,7 +104,7 @@
 - e)$\exist x(F(x)\and\forall y(S(y)\to\neg A(y,x))).$
 - f)$\forall y(F(u)\to\exist x(S(x)\and A(x,y))).$
 - g)$\exist x(F(x)\and\forall y((F(y)\and(y\neq x))\to A(x,y))).$
-- h)$\exist x(S(x)\and\forall(F(y)\to\neg A(y,x))).$
+- h)$\exist x(S(x)\and\forall y(F(y)\to\neg A(y,x))).$
 
 #### 1.5.21 C
 
@@ -114,7 +114,7 @@ $$
 \forall x\exist a\exist b\exist c\exist d((x>0)\to x=a^2+b^2+c^2+d^2),
 $$
 
- 论域为全体整数。
+论域为全体整数。
 
 #### 1.5.35 C
 
