@@ -50,17 +50,60 @@ $$
 >The deﬁning property of an ordered pair is that two ordered pairs are equal if and only if their ﬁrst elements are
 >equal and their second elements are equal. Surprisingly, instead of taking the ordered pair as a primitive concept, we can construct ordered pairs using basic notions from set theory. Show that if we deﬁne the ordered pair $(a, b)$ to be $\{\{a\}, \{a, b\}\}$, then $(a, b) = (c, d)$ if and only if $a = c$ and $b = d$. 
 
-
+- 充分性：已知 $a=c,b=d$ 时，$\{\{a\},\{a,b\}\}=\{\{c\},\{c,d\}\}$ 显然成立。
+- 必要性：已知 $\{\{a\},\{a,b\}\}=\{\{c\},\{c,d\}\}$ 时，
+  - $a=b$，则 $\{\{a\},\{a,b\}\}=\{a\}$，$\{\{c\},\{c,d\}\}=\{c\}$，即已知 $\{a\}=\{c\}$，便有 $a=c$，推知 $b=d$。
+    - $a\neq b$，则 $\{\{a\},\{a,b\}\}$ 是二元集，含有一个一元集和一个二元集。两集合相等，故 $\{\{c\},\{c,d\}\}$ 也含有一个一元集和一个二元集。这样便有 $c\ne d$。故 $\{a\}=\{c\}\Rightarrow a=c$。又$\{a,b\}=\{c,d\}$，易得 $b=d$。
 
 #### 2.2.19 G
 
->Show that if $A$, $B$, and $C$ are sets, then $A ∩ B ∩ C = A ∪B ∪ C$
+>Show that if $A$, $B$, and $C$ are sets, then $\overline{A ∩ B ∩ C} = \overline A ∪\overline B ∪ \overline C$
 >a) by showing each side is a subset of the other side.
 >b) using a membership table.
 
+- a) 
+  $$
+  \begin{align}
+  x\in \overline{A ∩ B ∩ C} &\equiv x\in \overline A ∪\overline B ∪ \overline C\\
+  &\equiv x\notin A\or x\notin B\or x\notin C\\
+  &\equiv x\in \overline A\or x\in\overline B\or x\in\overline C\\
+  &\equiv x\in \overline A ∪\overline B ∪ \overline C.
+  \end{align}
+  $$
+
+- 
+
+| $A$  | $B$  | $C$  | $A\cap B\cap C$ | $\overline {A\cap B\cap C}$ | $\overline A$ | $\overline B$ | $\overline C$ | $\overline A ∪\overline B ∪ \overline C$ |
+| :--: | :--: | :--: | :-------------: | :-------------------------: | :-----------: | :-----------: | :-----------: | :--------------------------------------: |
+|  1   |  1   |  1   |        1        |              0              |       0       |       0       |       0       |                    0                     |
+|  1   |  1   |  0   |        0        |              1              |       0       |       0       |       1       |                    1                     |
+|  1   |  0   |  1   |        0        |              1              |       0       |       1       |       0       |                    1                     |
+|  1   |  0   |  0   |        0        |              1              |       0       |       1       |       1       |                    1                     |
+|  0   |  1   |  1   |        0        |              1              |       1       |       0       |       0       |                    1                     |
+|  0   |  1   |  0   |        0        |              1              |       1       |       0       |       1       |                    1                     |
+|  0   |  0   |  1   |        0        |              1              |       1       |       1       |       0       |                    1                     |
+|  0   |  0   |  0   |        0        |              1              |       1       |       1       |       1       |                    1                     |
+
 #### 2.2.35 G
 
->Let $A$, $B$, and $C$ be sets. Use the identities in Table 1 to show that $(A ∪ B) ∩ (B ∪ C) ∩ (A ∪ C) = A ∩ B ∩ C$.
+>Let $A$, $B$, and $C$ be sets. Use the identities in Table 1 to show that $\overline{(A ∪ B)} ∩\overline{ (B ∪ C)} ∩\overline{ (A ∪ C)} = \overline A ∩ \overline B ∩\overline C$.
+
+$$
+\begin{align}
+\overline{(A ∪ B)} ∩\overline{ (B ∪ C)} ∩\overline{ (A ∪ C)} 
+&=\overline A\cap\overline B\cap\overline B\cap\overline C\cap\overline A\cap\overline C& 德\cdot 摩根律\\
+&=\overline A\cap(\overline B\cap\overline B)\cap\overline C\cap\overline A\cap\overline C&结合律\\
+&=\overline A\cap\overline B\cap\overline C\cap\overline A\cap\overline C&幂等律\\
+&=\overline A\cap\overline B\cap(\overline C\cap\overline A)\cap\overline C&结合律\\
+&=\overline A\cap\overline B\cap(\overline A\cap\overline C)\cap\overline C&交换律\\
+&=\overline A\cap\overline B\cap\overline A\cap(\overline C\cap\overline C)&结合律\\
+&=\overline A\cap\overline B\cap\overline A\cap\overline C&幂等律\\
+&=\overline B\cap\overline A\cap\overline A\cap\overline C&交换律\\
+&=\overline B\cap(\overline A\cap\overline A)\cap\overline C&结合律\\
+&=\overline B\cap\overline A\cap\overline C&幂等律\\
+&=\overline A\cap\overline B\cap\overline C&交换律.
+\end{align}
+$$
 
 #### 2.2.47 C
 
