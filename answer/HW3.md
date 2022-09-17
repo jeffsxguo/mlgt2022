@@ -105,7 +105,7 @@ $$
 \end{align}
 $$
 
-#### 2.2.47 C
+#### 2.2.47 C	
 
 >Suppose that $A$, $B$, and $C$ are sets such that $A ⊕ C =B ⊕ C$. Must it be the case that $A = B$?
 
