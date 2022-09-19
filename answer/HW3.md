@@ -4,6 +4,14 @@
 
 [TOC]
 
+#### 1.8.5 C
+
+假设$x\geq y$，则$max(x,y)=x,min(x,y)=y$；假设$x\leq y$，则$max(x,y)=y,min(x,y)=x$，$\therefore x+y=max(x,y)+min(x,y)$。
+
+#### 1.8.13 C
+
+8和9。
+
 #### 2.1.11 G
 
 >Determine whether each of these statements is true or false.
