@@ -5,9 +5,13 @@
 [TOC]
 #### 1.8.5 C
 
-假设$x\geq y$，则$max(x,y)=x,min(x,y)=y$；假设$x\leq y$，则$max(x,y)=y,min(x,y)=x$，$\therefore x+y=max(x,y)+min(x,y)$。
+>Prove that if $x$ and $y$ are real numbers, then $\max(x, y) + \min(x, y) = x + y$.
+
+假设$x\geq y$，则$\max(x,y)=x,\min(x,y)=y$；假设$x\leq y$，则$\max(x,y)=y,\min(x,y)=x$，$\therefore x+y=\max(x,y)+\min(x,y)$。
 
 #### 1.8.13 C
+
+>Prove that there exists a pair of consecutive integers such that one of these integers is a perfect square and the other is a perfect cube.
 
 8和9。
 
