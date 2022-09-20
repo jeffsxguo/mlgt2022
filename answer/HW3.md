@@ -3,6 +3,13 @@
 > By [Jingyi Chen](chenjingyi071@mail.ustc.edu.cn) with C and [Songxiao Guo](logname@mail.ustc.edu.cn) with G after each question number.
 
 [TOC]
+#### 1.8.5 C
+
+假设$x\geq y$，则$max(x,y)=x,min(x,y)=y$；假设$x\leq y$，则$max(x,y)=y,min(x,y)=x$，$\therefore x+y=max(x,y)+min(x,y)$。
+
+#### 1.8.13 C
+
+8和9。
 
 #### 1.8.27 G
 
@@ -22,6 +29,7 @@
 假设第(5)种可以覆盖，则左上角必定有一块。根据其形状，则第一行或第一列的每个位置都有唯一的放置方式，将导致第一行或第一列最后一个格子无法被覆盖。
 
 #### 2.1.11 G
+
 
 >Determine whether each of these statements is true or false.
 >a) $0 ∈ ∅$
