@@ -113,7 +113,7 @@ $$
 \end{align}
 $$
 
-#### 2.2.47 C
+#### 2.2.47 C	
 
 >Suppose that $A$, $B$, and $C$ are sets such that $A ⊕ C =B ⊕ C$. Must it be the case that $A = B$?
 
@@ -132,11 +132,9 @@ $$
 >b) $f (S)$ is the number of $1$ bits in $S$.
 >c) $f (S)$ is the smallest integer $i$ such that the $i$th bit of $S$ is $1$ and $f (S) = 0$ when $S$ is the empty string, the string with no bits.
 
-a) 不是，因为“某个0”的位置是不确定的。
-
-b)是的，1的个数由S确定。
-
-c)是的，i的只由S确定。
+- a) 不是，因为“某个0”的位置是不确定的。
+- b)是的，1的个数由$S$确定。
+- c)是的，i的只由$S$确定。
 
 #### 2.3.21 C
 
@@ -146,29 +144,22 @@ c)是的，i的只由S确定。
 >c) one-to-one and onto.
 >d) neither one-to-one nor onto.
 
-a)例如$f(x)=3x+1(x\geq 0),f(x)=-3x+2(x<0)$。
-
-b)例如$f(x)=|x|+1$。
-
-c)例如$f(x)=2x+1(x\geq 0),f(x)=-2x(x<0)$。
-
-d)例如$f(x)=x^2+1$。
+- a)例如$f(x)=3x+1(x\geq 0),f(x)=-3x+2(x<0)$。
+- b)例如$f(x)=|x|+1$。
+- c)例如$f(x)=2x+1(x\geq 0),f(x)=-2x(x<0)$。
+- d)例如$f(x)=x^2+1$。
 
 #### 2.3.37 C
 
 >If $f$ and $f ◦g$ are onto, does it follow that $g$ is onto? Justify your answer.
 
-不一定，比如A={a},B={b,c},C={d},g(a)=b,f(b)=d,f(c)=d。类似这样构造一个中间的较大的集合和两侧较小的集合，使得g不能映上即可。
+不一定，比如$A={a},B={b,c},C={d},g(a)=b,f(b)=d,f(c)=d$。类似这样构造一个中间的较大的集合和两侧较小的集合，使得$g$不能映上即可。
 
 #### 2.4.27 C
 
 >Show that if $a_n$ denotes the $n$th positive integer that is not a perfect square, then $a_n = n + \{\sqrt n\}$, where $\{x\}$ denotes the integer closest to the real number $x$.
 
-把正整数分成两部分，一部分是完全平方数$1^2,2^2,...,k^2$，另一部分是去掉完全平方数后的序列$a_1,a_2,...,a_n$，这时$k^2<n+k<(k+1)^2$，
-
-即$(k-1/2)^2+3/4=k^2-k+1\leq n\leq(k+1/2)^2-1/4$，
-
-因此$k=\left\{\sqrt n\right\}$，$a_n=n+\left\{\sqrt n\right\}$。
+把正整数分成两部分，一部分是完全平方数$1^2,2^2,...,k^2$，另一部分是去掉完全平方数后的序列$a_1,a_2,...,a_n$，这时$k^2<n+k<(k+1)^2$，即$(k-1/2)^2+3/4=k^2-k+1\leq n\leq(k+1/2)^2-1/4$，因此$k=\left\{\sqrt n\right\}$，$a_n=n+\left\{\sqrt n\right\}$。
 
 #### 2.5.11 C
 
@@ -177,17 +168,15 @@ d)例如$f(x)=x^2+1$。
 >b) countably inﬁnite.
 >c) uncountable.
 
-a)例如$A=[0,1], B=[2,3],$ 直接没交集。
-
-b)例如$A=[0,1]\cup Z,B=[2,3]\cup Z$，交集把不可数的去掉了。
-
-c)例如$A=B=[0,1]$，交集有一段不可数的即可。
+- a)例如$A=[0,1], B=[2,3],$ 直接没交集。
+- b)例如$A=[0,1]\cup Z,B=[2,3]\cup Z$，交集把不可数的去掉了。
+- c)例如$A=B=[0,1]$，交集有一段不可数的即可。
 
 #### 2.5.17 C
 
 >If $A$ is an uncountable set and $B$ is a countable set, must $A − B$ be uncountable?
 
-是的。如果A-B可数，则$(A-B)+(A\cap B)=A$可数；A不可数，所以A-B不可数。
+是的。如果$A-B$可数，则$(A-B)+(A\cap B)=A$可数；$A$不可数，所以$A-B$不可数。
 
 #### 2.5.37 C
 
