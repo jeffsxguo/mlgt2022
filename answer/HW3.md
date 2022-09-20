@@ -3,16 +3,37 @@
 > By [Jingyi Chen](chenjingyi071@mail.ustc.edu.cn) with C and [Songxiao Guo](logname@mail.ustc.edu.cn) with G after each question number.
 
 [TOC]
-
 #### 1.8.5 C
 
-假设$x\geq y$，则$max(x,y)=x,min(x,y)=y$；假设$x\leq y$，则$max(x,y)=y,min(x,y)=x$，$\therefore x+y=max(x,y)+min(x,y)$。
+>Prove that if $x$ and $y$ are real numbers, then $\max(x, y) + \min(x, y) = x + y$.
+
+假设$x\geq y$，则$\max(x,y)=x,\min(x,y)=y$；假设$x\leq y$，则$\max(x,y)=y,\min(x,y)=x$，$\therefore x+y=\max(x,y)+\min(x,y)$。
 
 #### 1.8.13 C
 
+>Prove that there exists a pair of consecutive integers such that one of these integers is a perfect square and the other is a perfect cube.
+
 8和9。
 
-#### 2.1.11 G0.0.0
+#### 1.8.27 G
+
+>Write the numbers $1, 2, \cdots , 2n$ on a blackboard, where n is an odd integer. Pick any two of the numbers, $j$ and
+>$k$, write $|j − k|$ on the board and erase $j$ and $k$. Continue this process until only one integer is written on the board. Prove that this integer must be odd.
+
+数字和的奇偶性不变。最初情况为$1+2+\cdots+2n=n(2n+1)\equiv n\equiv 1(\mod 2)$。每次减少一个数，最后达到只剩一个数的情况，此时该数为奇数。
+
+#### 1.8.51 G
+
+>a) Draw each of the ﬁve diﬀerent tetrominoes, where a tetromino is a polyomino consisting of four squares.
+>b) For each of the ﬁve diﬀerent tetrominoes, prove or disprove that you can tile a standard checkerboard us-
+>ing these tetrominoes.
+
+![](../asserts/1_8_51.png)
+
+假设第(5)种可以覆盖，则左上角必定有一块。根据其形状，则第一行或第一列的每个位置都有唯一的放置方式，将导致第一行或第一列最后一个格子无法被覆盖。
+
+#### 2.1.11 G
+
 
 >Determine whether each of these statements is true or false.
 >a) $0 ∈ ∅$
