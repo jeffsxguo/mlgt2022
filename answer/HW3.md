@@ -12,7 +12,7 @@
 
 8和9。
 
-#### 2.1.11 G
+#### 2.1.11 G0.0.0
 
 >Determine whether each of these statements is true or false.
 >a) $0 ∈ ∅$
