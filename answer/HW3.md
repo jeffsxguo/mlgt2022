@@ -1,4 +1,4 @@
-> Mathematical Logic and Graph Theory 2022 Homework 3 Answers
+>  Mathematical Logic and Graph Theory 2022 Homework 3 Answers
 >
 > By [Jingyi Chen](chenjingyi071@mail.ustc.edu.cn) with C and [Songxiao Guo](logname@mail.ustc.edu.cn) with G after each question number.
 
@@ -134,7 +134,7 @@ $$
 \end{align}
 $$
 
-#### 2.2.47 C	
+#### 2.2.47 C	  
 
 >Suppose that $A$, $B$, and $C$ are sets such that $A ⊕ C =B ⊕ C$. Must it be the case that $A = B$?
 
