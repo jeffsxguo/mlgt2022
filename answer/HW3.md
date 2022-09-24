@@ -17,7 +17,7 @@
 
 #### 1.8.27 G
 
->Write the numbers $1, 2, \cdots , 2n$ on a blackboard, where n is an odd integer. Pick any two of the numbers, $j$ and
+>Write the numbers $1, 2, \cdots , 2n$ on a blackboard, where n is an odd integer. Pick any two of the numbers, $j$ and 
 >$k$, write $|j − k|$ on the board and erase $j$ and $k$. Continue this process until only one integer is written on the board. Prove that this integer must be odd.
 
 数字和的奇偶性不变。最初情况为$1+2+\cdots+2n=n(2n+1)\equiv n\equiv 1(\mod 2)$。每次减少一个数，最后达到只剩一个数的情况，此时该数为奇数。
@@ -175,11 +175,11 @@ c)例如$f(x)=2x+1(x\geq 0),f(x)=-2x(x<0)$。
 
 d)例如$f(x)=x^2+1$。
 
-#### 2.3.37 C
+#### 2.3.37 C    
 
 >If $f$ and $f ◦g$ are onto, does it follow that $g$ is onto? Justify your answer.
 
-不一定，比如A={a},B={b,c},C={d},g(a)=b,f(b)=d,f(c)=d。类似这样构造一个中间的较大的集合和两侧较小的集合，使得g不能映上即可。
+不一定，比如A={a},B={b,c},C={d},g(a)=b,f(b)=d,f(c)=d。类似这样构造一个中间的较大的集合和两侧较小的集合，使得g不能映上即可。 
 
 #### 2.4.27 C
 
