@@ -1,4 +1,4 @@
-> Mathematical Logic and Graph Theory 2022 Homework 3 Answers
+>  Mathematical Logic and Graph Theory 2022 Homework 3 Answers
 >
 > By [Jingyi Chen](chenjingyi071@mail.ustc.edu.cn) with C and [Songxiao Guo](logname@mail.ustc.edu.cn) with G after each question number.
 
@@ -135,7 +135,6 @@ $$
 $$
 
 #### 2.2.47 C
-
 >Suppose that $A$, $B$, and $C$ are sets such that $A ⊕ C =B ⊕ C$. Must it be the case that $A = B$?
 
 是的。
@@ -210,8 +209,15 @@ c)例如$A=B=[0,1]$，交集有一段不可数的即可。
 
 是的。如果A-B可数，则$(A-B)+(A\cap B)=A$可数；A不可数，所以A-B不可数。
 
-#### 2.5.37 C
+#### 2.5.31 G
 
->Show that the set of all computer programs in a particular programming language is countable.
+>Show that $Z^ + × Z^ +$ is countable by showing that the polynomial function $f : Z^ + × Z^ + → Z ^+$ with $f (m, n) =
+>(m + n − 2)(m + n − 1)∕2 + m$ is one-to-one and onto.
 
-例如这个程序只能使用80种不同符号，我们将它们记为101,102，...，180，然后对于一个程序，我们分析其符号串并产生对应的一个数字串，这样就映射到了自然数的子集。自然数是可数集，因此所有程序的集合也是可数集。
+- 映上：对于任意$z=f(m,n)$，若$(x-2)(x-1)/2<z<(x-1)x/2$，则取$m=z-(x-2)(x-1)/2,n=x-m$。
+
+- 一对一：假设$f(m_1,n_1)=f(m_2,n_2)$，则
+  $$
+  0=f(m_1,n_1)-f(m_2,n_2)=\\m_1-m_2+\frac12((m_1+m_2)(m_1-m_2)+(n_1+n_2)(n_1-n_2)+2n_1m_1-2n_2m_2-3(m_1-m_2)-3(n_1-n_2))\\=(m_1-m_2)(\frac12(m_1+m_2)+n_1-1)+(n_1-n_2)(\frac12(n_1+n_2)+m_1-\frac32).
+  $$
+  由 $(\frac12(m_1+m_2)+n_1-1)>0$，$(\frac12(n_1+n_2)+m_1-\frac32)>0$，故有$m_1=m_2,n_1=n_2$。
