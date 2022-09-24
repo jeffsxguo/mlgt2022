@@ -8,18 +8,28 @@
 
 > A palindrome is a string whose reversal is identical to the string. How many bit strings of length n are palindromes?
 
+n为偶数时，$2^{n/2}$；n为奇数时，$2^{(n+1)/2}$。
+
 #### 3.1.53 C
 
 >How many bit strings of length eight contain either three consecutive 0s or four consecutive 1s?
+
+147个。
+
+包含3个连续的0的个数是107,4个连续1的个数是48，都包含的个数是8，容斥原理得147。
 
 #### 3.1.77 C
 
 >How many diagonals does a convex polygon with n sides have? (Recall that a polygon is convex if every line segment connecting two points in the interior or boundary of the polygon lies entirely within this set and that a diagonal of a polygon is a line segment connecting two vertices that are not adjacent.)
 
+$n(n-3)/2$，从每个顶点往另外n-3个顶点连线，每条线都重复了一次。
+
 #### 3.2.13 C
 
 >Let $(x_i , y_ i , z_ i ), i = 1, 2, 3, 4, 5, 6, 7, 8, 9$, be a set of nined istinct points with integer coordinates in xyz space.
 >Show that the midpoint of at least one pair of these points has integer coordinates.
+
+一对点的3个维度分别有相同的奇偶性，他们的中点坐标就是整数的；每个点的3个维度的奇偶性一共有8中情况，鸽巢原理必有2个点的坐标奇偶性一致，中点坐标为整数。
 
 #### 3.2.15 G
 
