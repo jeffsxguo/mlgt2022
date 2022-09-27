@@ -7,10 +7,11 @@
 #### 1.4.7 C
 
 >Translate these statements into English, where $C(x)$ is “$x$ is a comedian” and $F(x)$ is “$x$ is funny” and the domain consists of all people.
->a) $∀x(C(x) → F(x))$
->b) $∀x(C(x) ∧ F(x))$
->c) $∃x(C(x) → F(x))$
->d) $∃x(C(x) ∧ F(x))$
+>
+>- a) $∀x(C(x) → F(x))$
+>- b) $∀x(C(x) ∧ F(x))$
+>- c) $∃x(C(x) → F(x))$
+>- d) $∃x(C(x) ∧ F(x))$
 
 - a)每个喜剧演员都很有趣；
 - b)每个人都是很有趣的喜剧演员；
@@ -20,11 +21,12 @@
 #### 1.4.27 C
 
 >Translate each of these statements into logical expressions in three diﬀerent ways by varying the domain and by using predicates with one and with two variables.
->a) A student in your school has lived in Vietnam.
->b) There is a student in your school who cannot speak Hindi.
->c) A student in your school knows Java, Prolog, and C++.
->d) Everyone in your class enjoys Thai food.
->e) Someone in your class does not play hockey.
+>
+>- a) A student in your school has lived in Vietnam.
+>- b) There is a student in your school who cannot speak Hindi.
+>- c) A student in your school knows Java, Prolog, and C++.
+>- d) Everyone in your class enjoys Thai food.
+>- e) Someone in your class does not play hockey.
 
 - a)令谓词 $Y(x)$ 表示语句“$x$ 是在你学校上的学生”。
   - 如果我们令 $V(x)$ 为“$x$ 曾在越南居住”，则
@@ -55,12 +57,12 @@
 #### 1.4.63 C
 
 >Let $P(x)$, $Q(x)$, $R(x)$, and $S(x)$ be the statements “$x$ is a baby,” “$x$ is logical,” “$x$ is able to manage a crocodile,” and “$x$ is despised,” respectively. Suppose that the domain consists of all people. Express each of these statements using quantiﬁers; logical connectives; and $P(x)$, $Q(x)$, $R(x)$, and $S(x)$.
->a) Babies are illogical.
->b) Nobody is despised who can manage a crocodile.
->c) Illogical persons are despised.
->d) Babies cannot manage crocodiles.
 >
->e) Does (d) follow from (a), (b), and (c)? If not, is there a correct conclusion?
+>- a) Babies are illogical.
+>- b) Nobody is despised who can manage a crocodile.
+>- c) Illogical persons are despised.
+>- d) Babies cannot manage crocodiles.
+>- e) Does (d) follow from (a), (b), and (c)? If not, is there a correct conclusion?
 
 - a)$\forall x(P(x)\to\neg Q(x))$
 - b)$\forall x(R(x)\to\neg S(x))$
@@ -71,12 +73,13 @@
 #### 1.5.7 C
 
 >Let $T(x, y)$ mean that student $x$ likes cuisine $y$, where the domain for $x$ consists of all students at your school andt he domain for $y$ consists of all cuisines. Express each of these statements by a simple English sentence.
->a) $¬T(Abdallah Hussein, Japanese)$
->b) $∃xT(x, Korean) ∧ ∀xT(x, Mexican)$
->c) $∃y(T(Monique Arsenault, y) ∨T(Jay Johnson, y))$
->d) $∀x∀z∃y((x ≠ z) → ¬(T(x, y) ∧ T(z, y)))$
->e) $∃x∃z∀y(T(x, y) ↔ T(z, y))$
->f ) $∀x∀z∃y(T(x, y) ↔ T(z, y))$
+>
+>- a) $¬T(Abdallah Hussein, Japanese)$
+>- b) $∃xT(x, Korean) ∧ ∀xT(x, Mexican)$
+>- c) $∃y(T(Monique Arsenault, y) ∨T(Jay Johnson, y))$
+>- d) $∀x∀z∃y((x ≠ z) → ¬(T(x, y) ∧ T(z, y)))$
+>- e) $∃x∃z∀y(T(x, y) ↔ T(z, y))$
+>- f ) $∀x∀z∃y(T(x, y) ↔ T(z, y))$
 
 - a)Abdallah Hussein 不喜欢日本菜。
 - b)学校的某些学生喜欢韩国菜，并且学校的每个人都喜欢墨西哥菜。
@@ -88,14 +91,15 @@
 #### 1.5.11 C
 
 >Let $S(x)$ be the predicate “$x$ is a student,” $F(x)$ the predicate “$x$ is a faculty member,” and $A(x, y)$ the predicate“$x$ has asked $y$ a question,” where the domain consists of all people associated with your school. Use quantiﬁers to express each of these statements.
->a) Lois has asked Professor Michaels a question.
->b) Every student has asked Professor Gross a question.
->c) Every faculty member has either asked Professor Miller a question or been asked a question by Professor Miller.
->d) Some student has not asked any faculty member a question.
->e) There is a faculty member who has never been asked a question by a student.
->f ) Some student has asked every faculty member a question.
->g) There is a faculty member who has asked every other faculty member a question.
->h) Some student has never been asked a question by a faculty member.
+>
+>- a) Lois has asked Professor Michaels a question.
+>- b) Every student has asked Professor Gross a question.
+>- c) Every faculty member has either asked Professor Miller a question or been asked a question by Professor Miller.
+>- d) Some student has not asked any faculty member a question.
+>- e) There is a faculty member who has never been asked a question by a student.
+>- f ) Some student has asked every faculty member a question.
+>- g) There is a faculty member who has asked every other faculty member a question.
+>- h) Some student has never been asked a question by a faculty member.
 
 - a)$A(Lois,Michaels 教授).$
 - b)$\forall x(S(x)\to A(x,Gross教授)).$
@@ -210,8 +214,9 @@ $$
 #### 1.7.19 G
 
 > Show that if $n$ is an integer and $n^3 + 5$ is odd, then $n$ is even using
-> a) a proof by contraposition.
-> b) a proof by contradiction.
+>
+> - a) a proof by contraposition.
+> - b) a proof by contradiction.
 
 - a)假设 $n$ 是奇数。则 $n^3+5\equiv1+5\equiv0(\mod 2)$，即 $n^3+5$ 不是奇数，原条件也不成立。故结论成立。
 - b)假设 $n$ 是奇数，并且 $n^3+5$ 也是奇数，则 $1\equiv n^3+5\equiv1+5\equiv0(\mod 2)$，矛盾！故结论成立。
