@@ -206,7 +206,7 @@ c)不是，例如$S$是000。
 
 >If $A$ is an uncountable set and $B$ is a countable set, must $A − B$ be uncountable?
 
-是的。如果A-B可数，则$(A-B)+(A\cap B)=A$可数；A不可数，所以A-B不可数。
+是的。如果$A-B$可数，则$(A-B)+(A\cap B)=A$可数；$A$不可数，所以$A-B$不可数。
 
 #### 2.5.31 G
 
