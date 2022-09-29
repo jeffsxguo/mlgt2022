@@ -10,13 +10,14 @@
 > p: It is below freezing.
 > q: It is snowing.
 > Write these propositions using p and q and logical connectives (including negations).
-> a) It is below freezing and snowing.
-> b) It is below freezing but not snowing.
-> c) It is not below freezing and it is not snowing.
-> d) It is either snowing or below freezing (or both).
-> e) If it is below freezing, it is also snowing.
-> f ) Either it is below freezing or it is snowing, but it is not snowing if it is below freezing.
-> g) That it is below freezing is necessary and suﬃcient for it to be snowing.
+>
+> - a) It is below freezing and snowing.
+> - b) It is below freezing but not snowing.
+> - c) It is not below freezing and it is not snowing.
+> - d) It is either snowing or below freezing (or both).
+> - e) If it is below freezing, it is also snowing.
+> - f ) Either it is below freezing or it is snowing, but it is not snowing if it is below freezing.
+> - g) That it is below freezing is necessary and suﬃcient for it to be snowing.
 
 - a) $p\and q$
 - b) $p\and\neg q$
@@ -29,10 +30,11 @@
 #### 1.1.19 G
 
 >Determine whether each of these conditional statements is true or false.
->a) If 1 + 1 = 2, then 2 + 2 = 5.
->b) If 1 + 1 = 3, then 2 + 2 = 4.
->c) If 1 + 1 = 3, then 2 + 2 = 5.
->d) If monkeys can ﬂy, then 1 + 1 = 3.
+>
+>- a) If 1 + 1 = 2, then 2 + 2 = 5.
+>- b) If 1 + 1 = 3, then 2 + 2 = 4.
+>- c) If 1 + 1 = 3, then 2 + 2 = 5.
+>- d) If monkeys can ﬂy, then 1 + 1 = 3.
 
 - a) F
 - b) T
@@ -42,12 +44,13 @@
 #### 1.1.35 G
 
 >Construct a truth table for each of these compound propositions.
->a) $(p ∨ q) → (p ⊕ q)$
->b) $(p ⊕ q) → (p ∧ q)$
->c) $(p ∨ q) ⊕ (p ∧ q)$
->d) $(p ↔ q) ⊕ (¬p ↔ q)$
->e) $(p ↔ q) ⊕ (¬p ↔ ¬r)$
->f ) $(p ⊕ q) → (p ⊕ ¬q)$
+>
+>- a) $(p ∨ q) → (p ⊕ q)$
+>- b) $(p ⊕ q) → (p ∧ q)$
+>- c) $(p ∨ q) ⊕ (p ∧ q)$
+>- d) $(p ↔ q) ⊕ (¬p ↔ q)$
+>- e) $(p ↔ q) ⊕ (¬p ↔ ¬r)$
+>- f ) $(p ⊕ q) → (p ⊕ ¬q)$
 
 - a)
 

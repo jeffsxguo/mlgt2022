@@ -24,9 +24,8 @@
 
 #### 1.8.51 G
 
->a) Draw each of the ﬁve diﬀerent tetrominoes, where a tetromino is a polyomino consisting of four squares.
->b) For each of the ﬁve diﬀerent tetrominoes, prove or disprove that you can tile a standard checkerboard us-
->ing these tetrominoes.
+>- a) Draw each of the ﬁve diﬀerent tetrominoes, where a tetromino is a polyomino consisting of four squares.
+>- b) For each of the ﬁve diﬀerent tetrominoes, prove or disprove that you can tile a standard checkerboard using these tetrominoes.
 
 ![](../asserts/1_8_51.png)
 
@@ -36,13 +35,14 @@
 
 
 >Determine whether each of these statements is true or false.
->a) $0 ∈ ∅$
->b) $∅ ∈ \{0\}$
->c) $\{0\} ⊂ ∅$
->d) $ ∅ ⊂ \{0\}$
->e) $\{0\} ∈ \{0\}$
->f ) $\{0\} ⊂ \{0\}$
->g) $\{∅\} ⊆ \{∅\}$
+>
+>- a) $0 ∈ ∅$
+>- b) $∅ ∈ \{0\}$
+>- c) $\{0\} ⊂ ∅$
+>- d) $ ∅ ⊂ \{0\}$
+>- e) $\{0\} ∈ \{0\}$
+>- f ) $\{0\} ⊂ \{0\}$
+>- g) $\{∅\} ⊆ \{∅\}$
 
 - a) F
 - b) F
@@ -87,8 +87,9 @@ $$
 #### 2.2.19 G
 
 >Show that if $A$, $B$, and $C$ are sets, then $\overline{A ∩ B ∩ C} = \overline A ∪\overline B ∪ \overline C$
->a) by showing each side is a subset of the other side.
->b) using a membership table.
+>
+>- a) by showing each side is a subset of the other side.
+>- b) using a membership table.
 
 - a) 
   $$
@@ -148,37 +149,36 @@ $$
 #### 2.3.3 C
 
 >Determine whether $f$ is a function from the set of all bit strings to the set of integers if
->a) $f (S)$ is the position of a $0$ bit in $S$.
->b) $f (S)$ is the number of $1$ bits in $S$.
->c) $f (S)$ is the smallest integer $i$ such that the $i$th bit of $S$ is $1$ and $f (S) = 0$ when $S$ is the empty string, the string with no bits.
+>
+>- a) $f (S)$ is the position of a $0$ bit in $S$.
+>- b) $f (S)$ is the number of $1$ bits in $S$.
+>- c) $f (S)$ is the smallest integer $i$ such that the $i$th bit of $S$ is $1$ and $f (S) = 0$ when $S$ is the empty string, the string with no bits.
 
 a) 不是，因为“某个0”的位置是不确定的。
 
-b)是的，1的个数由S确定。
+b)是的，1的个数由$S$确定。
 
-c)不是，例如S是000。
+c)不是，例如$S$是000。
 
 #### 2.3.21 C
 
 >Give an explicit formula for a function from the set of integers to the set of positive integers that is
->a) one-to-one, but not onto.
->b) onto, but not one-to-one.
->c) one-to-one and onto.
->d) neither one-to-one nor onto.
+>
+>- a) one-to-one, but not onto.
+>- b) onto, but not one-to-one.
+>- c) one-to-one and onto.
+>- d) neither one-to-one nor onto.
 
-a)例如$f(x)=3x+1(x\geq 0),f(x)=-3x+2(x<0)$。
-
-b)例如$f(x)=|x|+1$。
-
-c)例如$f(x)=2x+1(x\geq 0),f(x)=-2x(x<0)$。
-
-d)例如$f(x)=x^2+1$。
+- a)例如$f(x)=3x+1(x\geq 0),f(x)=-3x+2(x<0)$。
+- b)例如$f(x)=|x|+1$。
+- c)例如$f(x)=2x+1(x\geq 0),f(x)=-2x(x<0)$。
+- d)例如$f(x)=x^2+1$。
 
 #### 2.3.37 C    
 
 >If $f$ and $f ◦g$ are onto, does it follow that $g$ is onto? Justify your answer.
 
-不一定，比如A={a},B={b,c},C={d},g(a)=b,f(b)=d,f(c)=d。类似这样构造一个中间的较大的集合和两侧较小的集合，使得g不能映上即可。 
+不一定，比如$A={a},B={b,c},C={d},g(a)=b,f(b)=d,f(c)=d$。类似这样构造一个中间的较大的集合和两侧较小的集合，使得g不能映上即可。 
 
 #### 2.4.27 C
 
@@ -193,15 +193,14 @@ d)例如$f(x)=x^2+1$。
 #### 2.5.11 C
 
 >Give an example of two uncountable sets $A$ and $B$ such that $A ∩ B$ is
->a) ﬁnite.
->b) countably inﬁnite.
->c) uncountable.
+>
+>- a) ﬁnite.
+>- b) countably inﬁnite.
+>- c) uncountable.
 
-a)例如$A=[0,1], B=[2,3],$ 直接没交集。
-
-b)例如$A=[0,1]\cup Z,B=[2,3]\cup Z$，交集把不可数的去掉了。
-
-c)例如$A=B=[0,1]$，交集有一段不可数的即可。
+- a)例如$A=[0,1], B=[2,3],$ 直接没交集。
+- b)例如$A=[0,1]\cup Z,B=[2,3]\cup Z$，交集把不可数的去掉了。
+- c)例如$A=B=[0,1]$，交集有一段不可数的即可。
 
 #### 2.5.17 C
 
