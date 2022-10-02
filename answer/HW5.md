@@ -49,7 +49,7 @@
 > - c) How many ways are there to lay out a path of seven tiles as described in part (a)?
 
 - a) 设 $a_n$ 表示没有红色砖相邻的用 $n$ 块砖铺路的方式， $b_n$ 表示没有红色砖相邻，且最后一块为红色的用 $n$ 块砖铺路的方式。易知 $a_n=2b_{n-1}+3(a_{n-1}-b_{n-1})$，$b_n=a_{n-1}-b_{n-1}$，得到 $a_n=2a_{n-1}+2a_{n-2},n\geq3$。
-- b) $a_1=3,a_2=8$
+- b) $a_1=3,a_2=8.$
 - c) 利用特征方程法求得 $a_n=\frac{\sqrt3+2}{2\sqrt3}(1+\sqrt3)^n+\frac{\sqrt3-2}{2\sqrt3}(1-\sqrt3)^n$。故 $a_7=1224$。
 
 #### 4.1.29 G
