@@ -91,9 +91,23 @@ $$
 >- d) exactly $99$ letters are put into the correct envelopes?
 >- e) all letters are put into the correct envelopes?
 
+难以算出具体答案，用公式表示出来即可。
+
+$a)D_{100}/100!$
+
+$b)100D_{99}/100!$
+
+$c)C(100,2)/100!$
+
+$d)0$
+
+$e)1/100!$
+
 #### 4.6.17 C
 
 >How many ways can the digits $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$ be arranged so that no even digit is in its original position?
+
+$A_{10}^{10}-C_5^1A_9^9+C_5^2A_8^8-C_5^3A_7^7+C_5^4A_6^6-C_5^5A^5_5=2170680$.
 
 #### 5.1.5 C
 
@@ -105,9 +119,19 @@ $$
 >- c) there is at least one common link on Web page $a$ and Web page $b$.
 >- d) there is a Web page that includes links to both Web page $a$ and Web page $b$.
 
+a)自反的，传递的。
+
+b)对称的。
+
+c)对称的。
+
+d)自反的，对称的，传递的。
+
 #### 5.1.9 C
 
 >Show that the relation $R = ∅$ on the empty set $S = ∅$ is reﬂexive, symmetric, and transitive.
+
+自反性$\forall a((a,a)\in R)$对，因为没这个a；对称性和传递性也对，也是因为没有a,b。
 
 #### 5.1.49 C
 
@@ -120,11 +144,27 @@ $$
 >- e) reﬂexive and symmetric?
 >- f ) neither reﬂexive nor irreﬂexive?
 
+$a)2^{n(n+1)/2}$，因为每两者（包括自己和自己）之间可能有这个对称关系。
+
+$b)2^n3^{n(n-1)/2}$，因为每个元素都可以和自己有该关系也可以没有，同时，每两不同元素之间可能有两种方向的关系或没有关系。
+
+$c)3^{n(n-1)/2}$，因为每不同两者之间可能有两种方向的该关系或者没有关系。
+
+$d)2^{n(n-1)}$，因为自己和自己没有，每有序两者之间可能有该关系或没有。
+
+$e)2^{n(n-1)/2}$，因为自己和自己只能有，每无序两者之间可能有关系或没有。
+
+$f)2^{n^2}-2*2^{n(n-1)}$，所有关系减去自反的、反自反的，自反的和反自反的一样多。
+
 #### 5.1.57 C
 
 >Let $R$ be a relation that is reﬂexive and transitive. Prove that $R ^n = R$ for all positive integers $n$.
+
+归纳法，如果$R^n$是自反的、传递的，则因为是传递的，$R^{n+1}\subseteq R$；$(a,b)\in R$时，$(b,b)\in R^n$，所以$(a,b)\in R^{n+1}$。
 
 #### 5.2.23 C
 
 >Show that if $C$ is a condition that elements of the $n-$ary relations $R$ and $S$ may satisfy, then
 >$s C (R ∩ S) = s C (R) ∩ s C (S)$.
+
+如果一个n元组在$R\cap S$中且满足条件C，那么它或者在R中或者在S中且满足条件C，因此它也属于右侧；类似的如果一个n元组属于右侧，则它既在R中且满足条件C又在S中且满足条件C，因此它在$R\cap S$中且满足条件C，因此它也属于左侧。
