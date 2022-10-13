@@ -1,4 +1,4 @@
->Mathematical Logic and Graph Theory 2022 Homework 1 Answers
+>Mathematical Logic and Graph Theory 2022 Homework 5 Answers
 >
 >By [Jingyi Chen](chenjingyi071@mail.ustc.edu.cn) with C and [Songxiao Guo](logname@mail.ustc.edu.cn) with G after each question number.
 
@@ -8,7 +8,7 @@
 
 >How many ways are there for eight men and ﬁve women to stand in a line so that no two women stand next to each other?
 
-用插空法，先组合再排列，将 $8$ 个男士排成一排，算上首尾，共 $9$ 个空。在其中选择 $5$ 个放女士，再考虑人的不同，共 $A_8^8A_5^5C_{9}^5=609638440$ 种。
+用插空法，先组合再排列，将 $8$ 个男士排成一排，算上首尾，共 $9$ 个空。在其中选择 $5$ 个放女士，再考虑人的不同，共 $A_8^8A_5^5C_{9}^5=609638400$ 种。
 
 #### 3.3.31 G
 
@@ -46,7 +46,7 @@
 
 > - a) Find a recurrence relation for the number of ways to lay out a walkway with slate tiles if the tiles are red, green, or gray, so that no two red tiles are adjacent and tiles of the same color are considered indistinguishable.
 > - b) What are the initial conditions for the recurrence relation in part (a)?
-> - c) How many ways are there to lay out a path of seven tiles as described in part (a)?
+> - c) How many ways are there to lay out a path of seven tiles as described in p  art (a)?
 
 - a) 设 $a_n$ 表示没有红色砖相邻的用 $n$ 块砖铺路的方式， $b_n$ 表示没有红色砖相邻，且最后一块为红色的用 $n$ 块砖铺路的方式。易知 $a_n=2b_{n-1}+3(a_{n-1}-b_{n-1})$，$b_n=a_{n-1}-b_{n-1}$，得到 $a_n=2a_{n-1}+2a_{n-2},n\geq3$。
 - b) $a_1=3,a_2=8.$
@@ -75,9 +75,9 @@ $n=1$ 时，易知$S(m,1)=1$。$n\geq2$ 时，考虑从 $m$ 元集到 $n$ 元集
 
 >How many permutations of the $10$ digits either begin with the $3$ digits $987$, contain the digits $45$ in the ﬁfth and sixth positions, or end with the $3$ digits $123$?
 
-根据容斥原理，满足条件的排列数为
+根据容斥原理，满足条件的排列数为 
 $$
-A_7^7+A_8^8+A_7^7-A_5^5-A_5^5-A_4^4+A_1^1=50137.
+A_7^7+A_8^8+A_7^7-A_5^5-A_5^5-A_4^4+A_2^2=50138.
 $$
 
 #### 4.6.15 C
