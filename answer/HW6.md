@@ -18,8 +18,34 @@
 > $$
 > Find the matrices that represent
 > a) $R^ 2$ .
+>
 > b) $R^ 3$ .
 > c) $R^ 4$ .
+
+a) $\left[
+\begin{matrix}
+0&0&1\\
+1&1&0\\
+0&1&1
+\end{matrix}
+\right]$
+
+b)$\left[
+\begin{matrix}
+1&1&0\\
+0&1&1\\
+1&1&1
+\end{matrix}
+\right]$
+
+c)$\left[
+\begin{matrix}
+0&1&1\\
+1&1&1\\
+1&1&1\end{matrix}
+\right]$
+
+
 
 #### 5.3.31 C
 
@@ -27,13 +53,23 @@
 >
 ><img src="../asserts/5_3_31_1.png" style="zoom:33%;" /><img src="../asserts/5_3_31_2.png" style="zoom:33%;" /><img src="../asserts/5_3_31_3.png" style="zoom:33%;" />
 
+23：反自反的；
+
+24：自反的，反对称的，传递的；
+
+25：反自反的，反对称的。
+
 #### 5.4.13 C
 
 >Suppose that the relation $R$ on the ﬁnite set $A$ is represented by the matrix $\bold M_ R$ . Show that the matrix that represents the symmetric closure of $R$ is $\bold M _R ∨ \bold M^ t_R$ .
 
+定理：关系矩阵的转置矩阵就是关系矩阵的逆矩阵，而对称闭包就是$R\cup R^{-1}$，所以$M_{R\cup R^{-1}}=M_R\or M_R^T$。
+
 #### 5.4.23 C
 
 >Suppose that the relation $R$ is symmetric. Show that $R^ ∗$is symmetric.
+
+已知$R=R^{-1}$，则$(R^*)^{-1}=(\cup R^n)^{-1}=(\cup(R^{n})^{-1})=\cup R^n=R^*$。图论来说就是，边是双向的，连通性自然也是对称的。
 
 #### 5.4.29 C
 
@@ -42,6 +78,14 @@
 >- a) reﬂexive and transitive.
 >- b) symmetric and transitive.
 >- c) reﬂexive, symmetric, and transitive.
+
+a){(1,1),(1,2),(1,4),(2,2),(3,3),(4,1),(4,2),(4,4)}
+
+b){(1,1),(1,2),(1,4),(2,1),(2,2),(2,4),(3,3),(4,1),(4,2),(4,4)}
+
+c){(1,1),(1,2),(1,4),(2,1),(2,2),(2,4),(3,3),(4,1),(4,2),(4,4)}
+
+用图示说清楚也行。
 
 #### 5.5.7 G
 
