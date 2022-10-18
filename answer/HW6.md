@@ -51,7 +51,7 @@ c)$\left[
 
 >Determine whether the relations represented by the directed graphs shown in Exercises 23–25 are reﬂexive, irreﬂexive, symmetric, antisymmetric, and/or transitive.
 >
-><img src="../asserts/5_3_31_1.png" style="zoom:33%;" /><img src="../asserts/5_3_31_2.png" style="zoom:33%;" /><img src="../asserts/5_3_31_3.png" style="zoom:33%;" />
+><img src="../asserts/5_3_31_1.png" style="zoom:33%;" /><img src="../asserts/5_3_31_2.png" style="zoom:33%;" /><img src="../asserts/5_3_31_3.png" style="zoom:33%;" />           
 
 23：反自反的；
 
@@ -94,7 +94,7 @@ c){(1,1),(1,2),(1,4),(2,1),(2,2),(2,4),(3,3),(4,1),(4,2),(4,4)}
 用 $R(p,q)$ 表示在复合命题集合里面有 $p\leftrightarrow q$。$p\leftrightarrow q$ 表示 $p$ 与 $q$ 有相同的真值。下面证明 $R$ 是一个等价关系：
 
 - 自反性：$p$ 与 $p$ 显然有相同的真值。
-- 对称性：如果 $p$ 与 $q$ 有相同的真值，则显然有 $p$ 与 $p$ 有相同的真值。
+- 对称性：如果 $p$ 与 $q$ 有相同的真值，则显然有 $q$ 与 $p$ 有相同的真值。
 - 传递性：如果 $p$ 与 $q$ 有相同的真值，且 $q$ 与 $r$ 有相同的真值，显然有 $p$ 与 $r$ 有相同的真值。
 
 $T$ 的等价类是所有永真式构成的集合；$F$ 的等价类是所有永假式构成的集合。
@@ -261,7 +261,7 @@ $T$ 的等价类是所有永真式构成的集合；$F$ 的等价类是所有永
   \}.
   $$
 
-#### 5.5.63 G
+####  5.5.63 G
 
 >Do we necessarily get an equivalence relation when we form the transitive closure of the symmetric closure of the reﬂexive closure of a relation?
 
