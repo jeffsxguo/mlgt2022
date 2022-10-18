@@ -121,7 +121,7 @@ $$
 - c) 对称的。
 - d) 对称的。
 
-#### 5.1.9 C
+#### 5.1.9 C 
 
 >Show that the relation $R = ∅$ on the empty set $S = ∅$ is reﬂexive, symmetric, and transitive.
 
