@@ -51,7 +51,7 @@ c)$\left[
 
 >Determine whether the relations represented by the directed graphs shown in Exercises 23–25 are reﬂexive, irreﬂexive, symmetric, antisymmetric, and/or transitive.
 >
-><img src="../asserts/5_3_31_1.png" style="zoom:33%;" /><img src="../asserts/5_3_31_2.png" style="zoom:33%;" /><img src="../asserts/5_3_31_3.png" style="zoom:33%;" />
+><img src="../asserts/5_3_31_1.png" style="zoom:33%;" /><img src="../asserts/5_3_31_2.png" style="zoom:33%;" /><img src="../asserts/5_3_31_3.png" style="zoom:33%;" />           
 
 23：反自反的；
 
@@ -261,7 +261,7 @@ $T$ 的等价类是所有永真式构成的集合；$F$ 的等价类是所有永
   \}.
   $$
 
-#### 5.5.63 G
+####  5.5.63 G
 
 >Do we necessarily get an equivalence relation when we form the transitive closure of the symmetric closure of the reﬂexive closure of a relation?
 
