@@ -79,8 +79,7 @@
 
 #### 6.2.33
 
->Suppose that m people are selected as prize winners in a lottery, where each winner can select two prizes from a collection of diﬀerent prizes. Show if there are 2m prizes that every winner wants, then every winner is able to
->select two prizes that they want.
+>Suppose that m people are selected as prize winners in a lottery, where each winner can select two prizes from a collection of diﬀerent prizes. Show if there are 2m prizes that every winner wants, then every winner is able to select two prizes that they want.
 
 #### 6.2.47
 
