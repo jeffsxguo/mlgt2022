@@ -13,6 +13,11 @@
 >- c) $a = b$ or $a$ is an ancestor of $b$?
 >- d) $a$ and $b$ have a common friend?
 
+- a) 不是，没有自反性。
+- b) 不是，没有反对称性。
+- c) 是。
+- d) 不是，没有传递性。
+
 #### 5.6.33 G
 
 >Answer these questions for the poset ($\{3, 5, 9, 15, 24, 45\}, ∣$).
@@ -26,15 +31,39 @@
 >- g) Find all lower bounds of $\{15, 45\}$.
 >- h) Find the greatest lower bound of $\{15, 45\}$, if it exists.
 
+- a) $24$、$45$。
+- b) $3$、$5$。
+- c) 没有。
+- d) 没有。
+- e) $15$、$45$。
+- f) $15$。
+- g) $3$、$5$、$15$。
+- h) $15$。
+
 #### 5.6.43 G
 
 >Determine whether the posets with these Hasse diagrams are lattices.
 >
 ><img src="../asserts/5_6_43.png" style="zoom:33%;" />
 
+- a) 是。
+- b) 不是，$\{b,e\}$ 没有最小上界。
+- c) 是。
+
 #### 5.6.49 G
 
 >Show that the set of all partitions of a set $S$ with the relation $P _1\preccurlyeq P _2$ if the partition $P_ 1$ is a reﬁnement of the partition $P_ 2$ is a lattice.
+
+设 $\Pi$ 是集合 $S$ 的所有划分组成的集合。先证明 $(\Pi,\preccurlyeq)$ 是偏序集：
+
+- 自反性：显然。
+- 反对称性：对 $P_1,P_2\in\Pi$ ，假设 $P_1\preccurlyeq P_2$ 且 $P_2\preccurlyeq P_1$，取 $T\in P_1$，则 $\exist T'\in P_2$，有 $T\subseteq T'$。进一步 $\exist T''\in P_1$，有 $T'\subseteq T''$。$T\neq \empty$ 且 $T''\neq\empty$ 时，由于 $P_1$ 是划分，若 $T\neq T''$，则 $T\cap T''=\empty$，故有 $T= T''$。进一步，$T= T'$。由 $T$ 的任意性，以及 $P_1,P_2$ 是划分，有$P_1=P_2$。
+- 传递性：假设 $P_1\preccurlyeq P_2$ 且 $P_2\preccurlyeq P_3$，取 $T\in P_1$，则 $\exist T'\in P_2$，有 $T\subseteq T'$。进一步 $\exist T''\in P_3$，有 $T'\subseteq T''$。故 $T\in T''$。由 $T$ 的任意性，以及 $P_1,P_3$ 是划分，有 $P_1 \preccurlyeq P_3$。
+
+再证明对 $\forall (P_1,P_2)\in\Pi$ ，$P_1,P_2$ 都有最小上界和最大下界：
+
+- 最小上界：$\forall (P_1,P_2)\in\Pi$，我们这样构造它们的上界 $P_3$：取 $P'=P_1\cup P_2$，对 $\forall T\in P'$ ，若 $\exist T'\in P_1\cup P_2\and T\cap T'\neq\empty$，则从 $P$ 中去掉 $T,T'$，然后用 $T\cup T'$代替它。（闭包）最终得到的 $P'$ 便是 $P_3$。任取 $P_1$ 和 $P_2$ 的上界 $P_4$，$\forall T_1\in P_1,\exist T_1'\in P_4;\forall T_2\in P_2,\exist T_2'\in P_4$。由于 $P_4$ 是划分，故只有 $T_1'=T_2'$ 或 $T_1'\cap T_2'=\empty$。由构造规则，若$T_1$ 的闭包与 $T_2’$ 相交，则在某一步中，$\exist T'\in P_1\cup P_2，T'\neq\empty$，有 $T'-T_1'-T_2'\neq\empty$，只能有 $T_1'=T_2'$，这样对 $T_1,T_1'$ 有 $T_1$ 的闭包属于 $T_1'$。另一方面，$T_1$ 的闭包是划分 $P_3$ 的元素，由 $T_1$ 的任意性，证明了 $P_3$ 是 $P_1$ 和 $P_2$ 的最小上界。
+- 最大下界：$\forall (P_1,P_2)\in\Pi$，易知 $P_3=\{T|T= T_1\cap T_2,T_1\in P_1,T_2\in P_2\}$ 是$P_1$ 和 $P_2$ 的下界。任取 $P_1$ 和 $P_2$ 的下界 $P_4$ ，$\forall T\in P_4,\exist T_1\in P_1,\exist T_2\in P_2,T\in T_1\and T\in T_2\Rightarrow T\in T_1\cap T_2$，故 $T\in P_3$。由 $T$ 的任意性，以及 $P_4,P_3$ 是划分，有 $P_4 \preccurlyeq P_3$。这就证明了 $P_3$ 是 $P_1$ 和 $P_2$ 的最大下界。
 
 #### 5.6.67 G
 
@@ -42,9 +71,14 @@
 >
 ><img src="../asserts/5_6_67.png" style="zoom: 50%;" />
 
+确定用户需求 $\prec$ 写出功能需求 $\prec$ 设置测试点 $\prec$ 开发系统需求 $\prec$ 写文档 $\prec$ 开发模块 A $\prec$ 开发模块 B $\prec$ 开发模块 C $\prec$ 模块集成 $\prec$ $\alpha$ 测试 $\prec$ $\beta$ 测试 $\prec$ 完成。
+
 #### 6.1.11 G
 
 >Let $G$ be a simple graph. Show that the relation $R$ on the set of vertices of $G$ such that $uRv$ if and only if there is an edge associated to $\{u, v\}$ is a symmetric, irreﬂexive relation on $G$.
+
+- 对称的：由简单图边的无向性，知 $uRv$ 则 $vRu$。
+- 反自反的：由简单图无重边知 $u\not Ru$。
 
 #### 6.1.13 G
 
@@ -61,13 +95,19 @@
 >   A _5 = {x ∣ x > −1},
 >   A _6 = R$
 
+![](../asserts/6_1_13.png)
+
 #### 6.1.29 G
 
 >Describe a graph model that represents whether each person at a party knows the name of each other person at the party. Should the edges be directed or undirected? Should multiple edges be allowed? Should loops be allowed?
 
+令 $V$ 是参加聚会的人的集合，$E$ 是 $V\times V$ 中满足 $u$ 知道 $v$ 的名字的有序对 $(u,v)$ 的集合。不允许多重边、有向图、允许环。
+
 #### 6.2.5 G
 
 >Can a simple graph exist with 15 vertices each of degree ﬁve?
+
+不存在。总度数等于边数的二倍，为偶数，与 $15\times=75$ 为奇数矛盾。
 
 #### 6.2.27 C
 
