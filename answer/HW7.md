@@ -117,11 +117,11 @@
 >- b) Use Hall’s theorem to determine whether there is an assignment of employees to support areas so that each employee is assigned one area to support.
 >- c) If an assignment of employees to support areas so that each employee is assigned to one support area exists, ﬁnd one.
 
-a)人是PQRS，工作是hsnw，则二分图是$\{\{P,n\},\{P,w\},\{Q,s\},\{Q,n\},\{R,n\},\{R,w\},\{S,h\},\{S,s\}\}$；
+a)人是PQRS，工作是hsnw，则二分图是$\{\{P,h\},\{P,n\},\{P,w\}\{Q,s\},\{Q,n\},\{R,n\},\{R,w\},\{S,h\},\{S,s\}\}$；
 
 b)存在，因为任抽几个人，相应能完成的工作都比人数多，所以定理条件成立。
 
-c)$\{Pw,Qs,Rn,Sh\}$或者$\{Pn,Qs,Rw,Sh\}$两种答案。
+c)答案不唯一，能成就行。
 
 #### 6.2.33 C
 
