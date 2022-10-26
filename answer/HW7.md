@@ -1,4 +1,4 @@
->Mathematical Logic and Graph Theory 2022 Homework 6 Answers
+>Mathematical Logic and Graph Theory 2022 Homework 7 Answers
 >
 >By [Jingyi Chen](chenjingyi071@mail.ustc.edu.cn) with C and [Songxiao Guo](logname@mail.ustc.edu.cn) with G after each question number.
 
@@ -88,11 +88,11 @@
 >
 >- a) $A_ 1 = \{0, 2, 4, 6, 8\}, A_ 2 = \{0, 1, 2, 3, 4\},A_ 3 = \{1, 3, 5, 7, 9\}, A _4 = \{5, 6, 7, 8, 9\},A_ 5 = \{0, 1, 8, 9\}$
 >- b) $A_1= \{\cdots , −4, −3, −2, −1, 0\},A_2= \{\cdots , −2, −1, 0, 1, 2, \cdots\},\\A_3= \{\cdots , −6, −4, −2, 0, 2, 4, 6, \cdots\},A_4= \{\cdots , −5, −3, −1, 1, 3, 5, \cdots\},A_5= \{\cdots, −6, −3, 0, 3, 6, \cdots\}$
->- c) $A_ 1 = {x ∣ x < 0},
->  A _2 = {x ∣ −1 < x < 0},
->   A _3 = {x ∣ 0 < x < 1},
->   A _4 = {x ∣ −1 < x < 1},
->   A _5 = {x ∣ x > −1},
+>- c) $A_ 1 = \{x ∣ x < 0\},
+>  A _2 = \{x ∣ −1 < x < 0\},
+>   A _3 = \{x ∣ 0 < x < 1\},\\
+>   A _4 = \{x ∣ −1 < x < 1\},
+>   A _5 = \{x ∣ x > −1\},
 >   A _6 = R$
 
 ![](../asserts/6_1_13.png)
@@ -117,7 +117,7 @@
 >- b) Use Hall’s theorem to determine whether there is an assignment of employees to support areas so that each employee is assigned one area to support.
 >- c) If an assignment of employees to support areas so that each employee is assigned to one support area exists, ﬁnd one.
 
-a)人是PQRS，工作是hsnw，则二分图是$\{\{P,h\},\{P,n\},\{P,w\}\{Q,s\},\{Q,n\},\{R,n\},\{R,w\},\{S,h\},\{S,s\}\}$；
+a)人是$PQRS$，工作是$hsnw$，则二分图是$\{\{P,n\},\{P,w\},\{Q,s\},\{Q,n\},\{R,n\},\{R,w\},\{S,h\},\{S,s\}\}$；
 
 b)存在，因为任抽几个人，相应能完成的工作都比人数多，所以定理条件成立。
 
@@ -147,7 +147,7 @@ c)答案不唯一，能成就行。
 
 >If the simple graph $G$ has $v$ vertices and $e$ edges, how many edges does $\overline G$ have?
 
-$v(v-1)/2-e$。总的可能边数减去G的边数就是$\overline G$的边数。
+$v(v-1)/2-e$。总的可能边数减去$G$的边数就是$\overline G$的边数。
 
 #### 6.3.21 C
 
@@ -170,13 +170,13 @@ $\left[
 
 >Determine whether the given pair of graphs is isomorphic. Exhibit an isomorphism or provide a rigorous argument that none exists.<img src="../asserts/6_3_47.png" style="zoom: 50%;" />
 
-是同构的。证明图的同构可以构造出相同的邻接矩阵，例如此题将左侧的点1~10映射到右侧的1,9,4,5,6,7,8,3,10,2（答案不唯一）。
+是同构的。证明图的同构可以构造出相同的邻接矩阵，例如此题将左侧的点$1\textasciitilde10$映射到右侧的$1,9,4,5,6,7,8,3,10,2$（答案不唯一）。
 
 #### 6.3.49 C
 
 >Show that isomorphism of simple graphs is an equivalence relation.
 
-自己肯定和自己同构，所以是自反的。G和H同构则存在点的一一映射关系保持了相邻和不相邻性，这个一一映射反过来也对，所以是对称的。G和H同构，则有一一映射f，H和G同构，则有一一映射g，那么$g\circ f$也是一一映射并保证了相邻和非相邻性的，所以是传递的。
+自己肯定和自己同构，所以是自反的。$G$和$H$同构则存在点的一一映射关系保持了相邻和不相邻性，这个一一映射反过来也对，所以是对称的。$G$和$H$同构，则有一一映射$f$，$H$和$G$同构，则有一一映射$g$，那么$g\circ f$也是一一映射并保证了相邻和非相邻性的，所以是传递的。
 
 #### 6.3.59 C
 
