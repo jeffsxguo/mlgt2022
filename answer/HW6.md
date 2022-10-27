@@ -265,5 +265,5 @@ $T$ 的等价类是所有永真式构成的集合；$F$ 的等价类是所有永
 
 >Do we necessarily get an equivalence relation when we form the transitive closure of the symmetric closure of the reﬂexive closure of a relation?
 
-能。一个关系的自反闭包的对称闭包的传递闭包，显然具有自反性、对称性及传递性。
+能。一个关系的自反闭包显然有自反性，在其形成对称闭包时，不会改变自反性。在其形成传递闭包时，不会改变其自反性和对称性，故其具有自反性、对称性和传递性，也就是一个等价关系。
 
