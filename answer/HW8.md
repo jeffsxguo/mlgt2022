@@ -10,15 +10,25 @@
 >
 ><img src="../asserts/6_4_15.png" style="zoom: 50%;" />
 
+a){a,b,f}和{c,d,e}
+
+b){a,b,c,d,e,h},{f}和{g}（不要漏掉后两个）
+
+c){a,b,d,e,f,g,h,i}和{c}
+
 #### 6.4.23 C
 
 >Use paths either to show that these graphs are not isomorphic or to ﬁnd an isomorphism between them.
 >
 ><img src="../asserts/6_4_23.png" style="zoom:50%;" />
 
+是同构的，左边的12765834和右边的56783412。
+
 #### 6.4.37 C
 
 >Show that a simple graph with at least two vertices has at least two vertices that are not cut vertices.
+
+（最长边法）定义顶点u,v之间的距离d(u,v)是它们之间最短通路的长度，设图中s,t是使d(s,t)最大的两个顶点（即最长边的两个端点）。如果s和t不都不是割点，比如s是割点，那么割出的至少两个连通片中，记w为不在t的连通片内的一个点。因为从t到w的任一通路都经过s，所以d(w,t)>d(s,t)，矛盾！所以s和t都是割点。
 
 #### 6.4.45 G
 
